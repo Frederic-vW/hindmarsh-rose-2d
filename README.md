@@ -40,14 +40,14 @@ Noise is added via stochastic integration of the variable $x$:
 <img width="280" src="images/hr_integration.png">
 </p>
 
-The main function call running the simulation is: `hr2d(N, T, t0, dt, sd, D, a, b, c, d, s, r, x1, I0, stim, blocks)`:  
+The main function call running the simulation is: `hr2d(N, T, t0, dt, sd, D, a, b, c, d, s, r, x_1, I0, stim, blocks)`:  
 - `N`: lattice size `(N,N)`
 - `T`: number of simulation time steps
 - `t0`: number of 'warm-up' iterations
 - `dt`: integration time step
 - `sd`: noise intensity (&sigma;)
 - `D`: diffusion constant
-- `a,b,c,d,s,r,x1`: Hindmarsh-Rose model parameters, `I0`: stimulation current amplitude
+- `a,b,c,d,s,r,x_1`: Hindmarsh-Rose model parameters, `I0`: stimulation current amplitude
 - `stim`: stimulation current parameters, array of time-, x-, and y-interval borders
 - `blocks`: conduction blocks, array of x- and y-interval borders
 
@@ -61,7 +61,7 @@ In example 1, use
 ### Example-1
 Stimulation of a large block of the simulation area generates a depolarization in that area in which different wave patterns develop, including spiral waves.
 Parameters:  
-`N = 64, T = 15000, t0 = 2500, dt = 0.05, sd = 0.05, D = 2.0, a = 1.0, b = 3.0, c = 1.0, d = 5.0, s = 4.0, r = 0.001, x1 = -1.6, I0 = 3.5`
+`N = 64, T = 15000, t0 = 2500, dt = 0.05, sd = 0.05, D = 2.0, a = 1.0, b = 3.0, c = 1.0, d = 5.0, s = 4.0, r = 0.001, x_1 = -1.6, I0 = 3.5`
 
 <p align="center">
 <video src="videos/hr2d_I_3.50_s_2.00_sd_0.05_D_2.00.webm" width="256" height="256" controls preload></video>
