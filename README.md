@@ -1,5 +1,7 @@
 # Hindmarsh-Rose lattice model in *Python* and *julia*
 
+To cite this code, please use: [![DOI](zenodo.4921767.svg)](https://zenodo.org/badge/latestdoi/375518246)
+
 This repo contains implementations of the Hindmarsh-Rose model of neuronal excitability on a 2D lattice.  
 The code is available in Python and Julia.  
 
