@@ -31,7 +31,7 @@ The Hindmarsh-Rose model uses three variables to model membrane potential dynami
 Spatial coupling is introduced via diffusion of the voltage variable ($D \Delta V$):
 
 <p align="left">
-<img width="500" src="images/hr_equations.png">
+<img width="480" src="images/hr_equations.png">
 </p>
 
 Noise is added via stochastic integration of the variable $x$:
